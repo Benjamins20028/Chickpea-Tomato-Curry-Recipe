@@ -1,0 +1,25 @@
+h3 {
+  color: blue;
+}
+.layout {
+  width: 100%;
+
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+div {
+      background-color: #777799;
+    }
+p {
+        font-size: 25px;
+    }
+ul li {
+  font-size: 25px;
+}
+ol li {
+  color: blue;
+}
+h2 {
+      font-family: Verdana;
+}
