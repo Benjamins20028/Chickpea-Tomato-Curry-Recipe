@@ -4,15 +4,29 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <h1>
       <p style="text-align: center;">Ben's secret recipe to stay healthy</p>
-    <h2> Chickpea Tomato Curry</h2>
+    <h2 id="change"> Chickpea Tomato Curry</h2>
     <h2> Ingredients:</h2>
-     <section class="layout">
+
+    <label> Change recipe title:</label>
+    <input id = "maintitle" oninput = "changetitle()">
+
+    <label>What color do you like</label>
+    <p id = "colorchanger"> Click the button to change the list color</p>
+    <button onclick = " changecolor()">Change Color</button>
+
+
+    <select onchange="amountingredient()" id="favoritespice">
+      <option value="cumin">cumin</option>
+      <option value="old_bay">old_bay</option>
+      <option value="lemon_pepper">lemon_pepper</option>
+    </select>
         <div>
-            <ul>
+            <ul id= "ingredientsList">
                 <li> 1 tablespoon coconut oil</li>
                 <li> 2 large garlic cloves, finely chopped</li>
                  <li> 1 can of sundried tomatoes</li>
@@ -20,7 +34,7 @@
                  <li> Spices
                     <ul>
                         <li> ½ tablespoon of garam masala</li>
-                        <li> ½ tablespoon ground cumin</li>
+                        <li id="spicy"> 1 tablespoon of cumin</li>
                          <li> ½ tablespoon ground coriander</li>
                           <li> ½ tablespoon ground turmeric </li>
                           <li> ¼ teaspoon red chili flakes</li>
@@ -39,6 +53,8 @@
    <br>
    <br>
    <br>
+
+
    <p> Comments:
     <br>
     Jacobo123: I loved this recipe and am about to be so healthy
